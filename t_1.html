@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>这是我的第一个vue的页面</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+       {{ message }}
+       <h2>{{ school.name }} {{school.moblie}}</h2>
+       <ul>
+           <li>{{ campus[0] }}</li>
+           <li>{{ campus[1] }}</li>
+           <li>{{ campus[2] }}</li>
+           <li>{{ campus[3] }}</li>
+       </ul>
+    </div>
+
+
+ </div>
+
+    
+</body>
+
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+          message:"你好，小黑！",
+          school:{
+              name:"黑马程序员",
+              moblie:"400-618-9090"
+          },
+          campus:["北京校区","上海校区","广州校区","深圳校区"]
+         
+        }
+        
+    })
+
+  
+  
+</script>
+</html>
